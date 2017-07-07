@@ -319,83 +319,50 @@ $(document).ready(function () {
     //SIGNUP FORM
     //SIGNUP FORM
     var sessionList = {
-        'HTML': [
+        'Web Development': [
             {
                 'INSTRUCTOR': 'Sidd Iyer',
-                'DATE': 'Everyday, from 5/7 - 5/14',
-                'LOCATION': 'Los Altos High School, Room 702',
-                'TIME': '4:30pm'
+                'DATE': 'Sunday, from Jan 7th - March 11th',
+                'LOCATION': '783 West Portola Ave, Los Altos',
+                'TIME': '4pm - 6pm'
             },
             {
-                'INSTRUCTOR': 'Sidd Iyer',
-                'DATE': 'Everyday, from 6/7 - 6/14',
-                'LOCATION': 'Mountain View High School, Room 702',
-                'TIME': '3:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Sidd Iyer',
-                'DATE': 'Everyday, from 7/7 - 7/14',
-                'LOCATION': 'Homestead High School, Room 702',
-                'TIME': '5:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Sidd Iyer',
-                'DATE': 'Everyday, from 8/7 - 8/14',
-                'LOCATION': 'Lynbrook High School, Room 702',
-                'TIME': '6:30pm'
+               'INSTRUCTOR': 'Sidd Iyer',
+                'DATE': 'Sunday, from Jun 10th - July 5th',
+                'LOCATION': '783 West Portola Ave, Los Altos',
+                'TIME': '4pm - 6pm'
             }
+            
         ],
         'Java': [
             {
                 'INSTRUCTOR': 'Sahil Morchi',
-                'DATE': 'Everyday, from 5/7 - 5/14',
-                'LOCATION': 'Los Altos High School, Room 702',
-                'TIME': '4:30pm'
+                'DATE': 'Sunday, Jan 7th - March 11th',
+                'LOCATION': '915 Mackenzie Drive, Sunnyvale',
+                'TIME': '4pm - 6pm'
             },
             {
                 'INSTRUCTOR': 'Sahil Morchi',
-                'DATE': 'Everyday, from 6/7 - 6/14',
-                'LOCATION': 'Mountain View High School, Room 702',
-                'TIME': '3:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Sahil Morchi',
-                'DATE': 'Everyday, from 7/7 - 7/14',
-                'LOCATION': 'Homestead High School, Room 702',
-                'TIME': '5:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Sahil Morchi',
-                'DATE': 'Everyday, from 8/7 - 8/14',
-                'LOCATION': 'Lynbrook High School, Room 702',
-                'TIME': '6:30pm'
+                'DATE': 'Sunday, from Jun 10th - July 5th',
+                'LOCATION': '915 Mackenzie Drive, Sunnyvale',
+                'TIME': '4pm - 6pm'
             }
+           
         ],
-        'WebServer': [
+        'Game Development': [
             {
                 'INSTRUCTOR': 'Henry Lai',
-                'DATE': 'Everyday, from 5/7 - 5/14',
+                'DATE': 'Sunday, Jan 7th - March 11th',
                 'LOCATION': 'Los Altos High School, Room 702',
-                'TIME': '4:30pm'
+                'TIME': '4pm - 6pm'
             },
             {
                 'INSTRUCTOR': 'Henry Lai',
-                'DATE': 'Everyday, from 6/7 - 6/14',
+                'DATE': 'Everyday, from Jun 10th - July 5th',
                 'LOCATION': 'Mountain View High School, Room 702',
-                'TIME': '3:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Henry Lai',
-                'DATE': 'Everyday, from 7/7 - 7/14',
-                'LOCATION': 'Homestead High School, Room 702',
-                'TIME': '5:30pm'
-            },
-            {
-                'INSTRUCTOR': 'Henry Lai',
-                'DATE': 'Everyday, from 8/7 - 8/14',
-                'LOCATION': 'Lynbrook High School, Room 702',
-                'TIME': '6:30pm'
+                'TIME': '4pm-6pm'
             }
+            
         ]
     }
     var hasInteracted = 0;
