@@ -1,4 +1,5 @@
 var done = 0;
+var done = 0;
 $(document).ready(function () {
     //HEIGHT FIX
     
@@ -271,6 +272,39 @@ $(document).ready(function () {
         '1bio' : 'Sahil has first started coding when he was very young. He has completed the AP Computer Science A course and exam. In addition, he won first place in Coding and Programming at the State FBLA conference. He has coded various projects of his own such as tower defense games, artificial intelligence based games, and even a speech generator. Having been coding for such a long time, he wants to help others learn to code.',
         '2bio' : 'Sidd Iyer has been creating websites since middle school.  Over the years, he devloped a variety of different web applications, including grades.mvla.me, a website similar to naviance that helps students predict their grades in the future and choose colleges that are tailored toward their academic progress.  Along with grades.mvla.me, Sidd Iyer is currently working on two other sibling projects; agenda.mvla.me and study.mvla.me; both applictiaons that aim to lower student stress. This website was developed and designed from scratch by Sidd Iyer.'
     }
+    
+    var projects = {
+        '1proj' : [
+            {
+              'name': 'Family Entertainment Center Database System',
+              'desc': 'A database system to manage the general operations of a family entertainment center. A program '
+            },
+            {
+              'name': 'Asteria',
+              'desc': 'A 2D side-scrolling space shooter game with sci-fi and MMO elements.'
+            },
+            {
+              'name': 'Flux Planner',
+              'desc': 'A ACT/SAT study tool that help you keep track of your test scores, and tailors a custom study plan for you. '
+            }
+        ],
+        '2proj' : [
+            {
+              'name': 'Grades Calculator',
+              'desc': 'Calculator that allows students to make real time changes to their grade.'
+            },
+            {
+              'name': 'Study Guide',
+              'desc': 'Allows you to take a photo of your work and can convert it to a compiled study guide.'
+            },
+            {
+              'name': 'School Agenda',
+              'desc': 'An agenda tailored towards his school district to manage classes and schoolwork.'
+            }
+        ]
+        
+    }
+    
     $('.picture').mouseenter(function () {
         var id = $(this).prop("id");
 
@@ -290,10 +324,21 @@ $(document).ready(function () {
     $('.picture').click(function () {
         var id = $(this).prop("id");
         var newId = id.replace('picture', 'desc');
-        var descId = id.replace('picture', 'bio')
+        var descId = id.replace('picture', 'bio');
         var name = $('#'+newId).text();
         var description = biographies[descId];
         var fullName = 'Portfolio // ' + name; 
+        var projId = id.replace('picture', 'proj');
+        var profile = projects[projId];
+        var selectedRow = 0;
+        $('.projects').find('tr').each(function(){
+           $(this).children().first().text(profile[selectedRow]['name']);
+           $(this).children().last().text(profile[selectedRow]['desc']);
+            selectedRow++;
+        });
+            
+        
+        
         $('.sheetDesc').text(fullName);
         $('.sheetContent').text(description);
         $('.overlayBio').css('display', 'block');
