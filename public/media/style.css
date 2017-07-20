@@ -1468,7 +1468,13 @@ RESPONIVE DESIGN
 RESPONIVE DESIGN
 */
 
-
+/*DONATE */
+.donateform {
+    z-index: 1000;
+    position: relative;
+    margin-left: 3vmin;
+    margin-top: 3vmin;
+}
 /*RESIZE OVERALL ELEMENTS */
 @media (max-width: 1400px) { 
     .widthChange {

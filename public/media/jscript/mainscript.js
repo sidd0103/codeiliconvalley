@@ -228,6 +228,50 @@ $(document).ready(function () {
             }
         }
     });
+    $('#donate').click(function () {
+        var targetSlide = '5container';
+        var prevHighlight2 = '.' + currentSlide.replace("container", 'select');
+
+        var currentSlideNumber = currentSlide.replace('container', '') * 1;
+        var targetSlideNumber = targetSlide.replace('container', '') * 1;
+        if (targetSlide == currentSlide) {
+
+        } else {
+            if (targetSlideNumber > currentSlideNumber) {
+                $('#' + currentSlide).css('transition', 'all 800ms cubic-bezier(.86,.01,.63,.99)');
+                $('#' + currentSlide).css('margin-left', '2000');
+                $('#' + currentSlide).css('opacity', '0');
+                $(prevHighlight2).css('color', '');
+                $('#donate').css('color', 'lightgreen');
+                setTimeout(function () {
+                    $('#' + currentSlide).css('display', 'none');
+                    $('#' + targetSlide).css('display', 'block');
+                }, 700);
+                setTimeout(function () {
+                    $('#' + targetSlide).css('transition', 'margin-left 1s ease-in-out, opacity 1s');
+                    $('#' + targetSlide).css('opacity', '1');
+                    $('#' + targetSlide).css('margin-left', '0');
+                    currentSlide = targetSlide;
+                }, 800);
+            } else {
+                $('#' + currentSlide).css('transition', 'all 800ms cubic-bezier(.86,.01,.63,.99)');
+                $('#' + currentSlide).css('margin-left', '-2000');
+                $('#' + currentSlide).css('opacity', '0');
+                $(prevHighlight2).css('color', '');
+                $('#donate').css('color', 'lightgreen');
+                setTimeout(function () {
+                    $('#' + currentSlide).css('display', 'none');
+                    $('#' + targetSlide).css('display', 'block');
+                }, 700);
+                setTimeout(function () {
+                    $('#' + targetSlide).css('transition', 'margin-left 1s ease-in-out, opacity 1s');
+                    $('#' + targetSlide).css('opacity', '1');
+                    $('#' + targetSlide).css('margin-left', '0');
+                    currentSlide = targetSlide;
+                }, 800);
+            }
+        }
+    });
     $('.move').click(function () {
         done = 0;
         var prevHighlight2 = '.' + currentSlide.replace("container", 'select');
