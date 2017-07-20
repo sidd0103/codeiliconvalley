@@ -277,7 +277,7 @@ $(document).ready(function () {
         '1proj' : [
             {
               'name': 'Family Entertainment Center Database System',
-              'desc': 'A database system to manage the general operations of a family entertainment center. A program '
+              'desc': 'A database system to manage the general operations of a family entertainment center. A program that earned him first place at the State FBLA Conference. '
             },
             {
               'name': 'Asteria',
@@ -285,7 +285,7 @@ $(document).ready(function () {
             },
             {
               'name': 'Flux Planner',
-              'desc': 'A ACT/SAT study tool that help you keep track of your test scores, and tailors a custom study plan for you. '
+              'desc': 'An ACT/SAT study tool that help you keep track of your test scores, and tailors a custom study plan for you. '
             }
         ],
         '2proj' : [
