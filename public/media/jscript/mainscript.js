@@ -314,7 +314,7 @@ $(document).ready(function () {
     //BIO
     var biographies = {
         '1bio' : 'Sahil has first started coding when he was very young. He has completed the AP Computer Science A course and exam. In addition, he won first place in Coding and Programming at the State FBLA conference. He has coded various projects of his own such as tower defense games, artificial intelligence based games, and even a speech generator. Having been coding for such a long time, he wants to help others learn to code.',
-        '2bio' : 'Sidd Iyer has been creating websites since middle school.  Over the years, he devloped a variety of different web applications, including grades.mvla.me, a website similar to naviance that helps students predict their grades in the future and choose colleges that are tailored toward their academic progress.  Along with grades.mvla.me, Sidd Iyer is currently working on two other sibling projects; agenda.mvla.me and study.mvla.me; both applictiaons that aim to lower student stress. This website was developed and designed from scratch by Sidd Iyer.'
+        '2bio' : 'Sidd Iyer has been creating websites since middle school.  Over the years, he devloped a variety of different web applications, including grades.mvla.me, a website similar to naviance that helps students predict their grades in the future and choose colleges that are tailored toward their academic progress.  Along with grades.mvla.me, Sidd Iyer is currently working on two other sibling projects; agenda.mvla.me and study.mvla.me; both applications that aim to lower student stress. This website was developed and designed from scratch by Sidd Iyer.'
     }
     
     var projects = {
